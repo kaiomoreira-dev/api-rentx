@@ -4,7 +4,7 @@
 
 **RN** = Regra de negócio
 
-<!-- Cadastro de Categoria -->
+# Cadastro de Categoria
 **RF**
     Deve ser possivel cadastrar uma categoria.
 
@@ -12,9 +12,9 @@
     Não deve ser possivel cadastrar uma categoria com o mesmo nome.
     Apenas um administrador pode ter acesso para cadastrar uma nova categoria.
 
-<!-- Cadastro de Carro -->
+# Cadastro de Carro
 **RF**
-    x Deve ser possivel cadastrar um carro.
+Deve ser possivel cadastrar um carro.
         
     Atributos padrão:
         - available = true
@@ -30,21 +30,22 @@
         - brand
         - category_id
 **RN**
-    x Não deve ser possivel cadas com a mesma placa.
-    x O carro deve ser cadastrado como disponivel true por padrao.
-    x Apenas um administrador pode ter acesso para cadastrar um carro novo.
-<!-- Listagem de Carro -->
+    Não deve ser possivel cadas com a mesma placa.
+    O carro deve ser cadastrado como disponivel true por padrao.
+    Apenas um administrador pode ter acesso para cadastrar um carro novo.
+
+# Listagem de Carro
 **RF**
-    x Deve ser possivel listar todos os carros disponiveis.
-    x Deve ser possivel listar todos os carros disponiveis pela marca.
-    x Deve ser possivel listar todos os carros disponiveis pela categoria.
-    x Deve ser possivel listar todos os carros disponiveis pelo nome.
+    Deve ser possivel listar todos os carros disponiveis.
+    Deve ser possivel listar todos os carros disponiveis pela marca.
+    Deve ser possivel listar todos os carros disponiveis pela categoria.
+    Deve ser possivel listar todos os carros disponiveis pelo nome.
 
 **RN**
-    x Não precisa ser administrador para acessar a lista de carros.
+    Não precisa ser administrador para acessar a lista de carros.
 
 
-<!-- Cadastro de IMG do carro -->
+# Cadastro de IMG do carro
 **RF**
     Deve ser possivel listar todos os carros existentes.
     Deve ser possivel cadastrar uma imagem de um carro.
@@ -57,25 +58,25 @@
     Deve ser possivel cadastrar mais de uma imagem do carro.
     Não deve ser possivel cradastrar uma imagem para um carro que não existe.
 
-<!-- Cadastro de Especificação-->
+# Cadastro de Especificação
 **RF**
-    x Deve ser possivel cadastrar uma especificação.
+    Deve ser possivel cadastrar uma especificação.
 
 **RN** 
-    x Apenas um administrador pode ter acesso para cadastrar uma especificaçãos.
-    x Não deve ser possivel cadastrar uma especificação com o mesmo nome.
+    Apenas um administrador pode ter acesso para cadastrar uma especificaçãos.
+    Não deve ser possivel cadastrar uma especificação com o mesmo nome.
 
-<!-- Cadastro de Especificação do carro -->
+# Cadastro de Especificação do carro
 **RF**
-    x Deve ser possivel cadastrar uma especificação para um carro.
+    Deve ser possivel cadastrar uma especificação para um carro.
 
 **RN** 
     Apenas um administrador pode ter acesso para cadastrar uma especificação para um carro.
-    x Não deve ser possivel possivel criar uma especificação para um carro que nao existe.
+    Não deve ser possivel possivel criar uma especificação para um carro que nao existe.
 
     Não deve ser possivel possivel cadastrar uma especificação ja existente para o mesmo  carro.
 
-<!-- Cadastro de Usuário -->
+# Cadastro de Usuário
 **RF**
     Deve ser possivel cadastrar uma usuário.
     
@@ -84,7 +85,7 @@
     Apenas um administrador pode ter acesso para cadastrar um usuário.
     Por padrão o usuário não deve ser criado como administrado.
     
-<!-- Aluguel de carros -->
+# Aluguel de carros
 **RF**
     Deve ser possivel alugar um carro.
 
