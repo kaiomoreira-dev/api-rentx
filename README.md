@@ -5,8 +5,9 @@
 **RN** = Regra de negócio
 
 # Cadastro de Categoria
+
 **RF**
-    Deve ser possivel cadastrar uma categoria.
+Deve ser possivel cadastrar uma categoria.
 
 **RN**
     Não deve ser possivel cadastrar uma categoria com o mesmo nome.
@@ -87,10 +88,10 @@ Deve ser possivel cadastrar um carro.
     
 # Aluguel de carros
 **RF**
-    Deve ser possivel alugar um carro.
+Deve ser possivel alugar um carro.
 
 **RN** 
-    O usuário a operar deve ser administrador para alugar um carro ou mais.
+O usuário a operar deve ser administrador para alugar um carro ou mais.
     Não deve ser feito um aluguel para um usuário que ja tem um alugel existente.
     Não deve ser feito um aluguel para um carro que ja tem um alugel existente.
     O aluguel do carro deve ser no minimo de 24horas.
