@@ -1,9 +1,10 @@
 import { Router } from "express";
 import multer from "multer";
 
-import { CreateCategoriesController } from "../../../../src/modules/cars/useCases/createCategories/CreateCategoriesController";
-import { ImportCategoriesController } from "../../../../src/modules/cars/useCases/importCategories/ImportCategoriesController";
-import { ListCategoriesController } from "../../../../src/modules/cars/useCases/listCategories/ListCategoriesController";
+import { CreateCategoriesController } from "@modules/cars/useCases/createCategories/CreateCategoriesController";
+import { ImportCategoriesController } from "@modules/cars/useCases/importCategories/ImportCategoriesController";
+import { ListCategoriesController } from "@modules/cars/useCases/listCategories/ListCategoriesController";
+
 import { ensureAdmin } from "../middlewares/ensureAdmin";
 import { ensureAuthenticate } from "../middlewares/ensureAuthenticate";
 

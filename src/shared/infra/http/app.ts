@@ -8,7 +8,7 @@ import "../../container";
 
 import upload from "@config/upload";
 
-import swaggerFile from "../../../src/swagger.json";
+import swaggerFile from "../../../swagger.json";
 import { AppError } from "../../errors/AppError";
 import createConnection from "../typeorm";
 import { router } from "./routes";
