@@ -5,9 +5,8 @@ import { inject, injectable } from "tsyringe";
 import auth from "@config/auth";
 import { IUsersRepository } from "@modules/accounts/repositories/IUsersRepository";
 import { IUsersTokensRepository } from "@modules/accounts/repositories/IUsersTokensRepository";
-
-import { DayjsDateProvider } from "../../../../../shared/container/providers/DateProvider/implementations/DayjsDateProvider";
-import { AppError } from "../../../../../shared/errors/AppError";
+import { DayjsDateProvider } from "@shared/container/providers/DateProvider/implementations/DayjsDateProvider";
+import { AppError } from "@shared/errors/AppError";
 
 interface IRequest {
   email: string;

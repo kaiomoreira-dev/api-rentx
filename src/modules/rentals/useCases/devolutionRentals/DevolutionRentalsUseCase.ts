@@ -3,9 +3,8 @@ import { inject, injectable } from "tsyringe";
 import { ICarsRepository } from "@modules/cars/repositories/ICarsRepository";
 import { Rentals } from "@modules/rentals/infra/typeorm/entities/Rentals";
 import { IRentalsRepository } from "@modules/rentals/repositories/IRentalsRepository";
-
-import { IDateProvider } from "../../../../../shared/container/providers/DateProvider/IDateProvider";
-import { AppError } from "../../../../../shared/errors/AppError";
+import { IDateProvider } from "@shared/container/providers/DateProvider/IDateProvider";
+import { AppError } from "@shared/errors/AppError";
 
 interface IRequest {
     id: string;

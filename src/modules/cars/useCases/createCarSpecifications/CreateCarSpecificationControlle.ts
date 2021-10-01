@@ -12,9 +12,11 @@ class CreateCarSpecificationControlle {
       CreateCarSpecificationUseCase
     );
 
-    const createdCarSPecification = await createdCarSPecificationUseCase.execute(
-      { car_id: id, specification_id }
-    );
+    const createdCarSPecification =
+      await createdCarSPecificationUseCase.execute({
+        car_id: id,
+        specification_id,
+      });
 
     return response.status(200).json(createdCarSPecification);
   }

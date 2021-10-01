@@ -1,6 +1,6 @@
 import { CreateCategoryInMemory } from "@modules/cars/repositories/in-memory/CreateCategoryInMemory";
+import { AppError } from "@shared/errors/AppError";
 
-import { AppError } from "../../../../../shared/errors/AppError";
 import { CreateCategoriesUseCase } from "./CreateCategoriesUseCase";
 
 let createCategoryInMemory: CreateCategoryInMemory;

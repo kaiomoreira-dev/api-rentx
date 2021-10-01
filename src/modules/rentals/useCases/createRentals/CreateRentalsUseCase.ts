@@ -4,9 +4,8 @@ import { ICarsRepository } from "@modules/cars/repositories/ICarsRepository";
 import { ICreateRentalsDTO } from "@modules/rentals/dto/ICreateRentalsDTO";
 import { Rentals } from "@modules/rentals/infra/typeorm/entities/Rentals";
 import { IRentalsRepository } from "@modules/rentals/repositories/IRentalsRepository";
-
-import { IDateProvider } from "../../../../../shared/container/providers/DateProvider/IDateProvider";
-import { AppError } from "../../../../../shared/errors/AppError";
+import { IDateProvider } from "@shared/container/providers/DateProvider/IDateProvider";
+import { AppError } from "@shared/errors/AppError";
 
 @injectable()
 class CreateRentalsUseCase {
@@ -26,18 +25,16 @@ class CreateRentalsUseCase {
     }: ICreateRentalsDTO): Promise<Rentals> {
         const minimunHour = 24;
 
-        const findRentalByCar = await this.rentalsRepository.findOpenRentalByCar(
-            car_id
-        );
+        const findRentalByCar =
+            await this.rentalsRepository.findOpenRentalByCar(car_id);
 
         // verifica se existe um aluguel criado com o id desse carro recebido
         if (findRentalByCar) {
             throw new AppError("Car already exists for a rentals");
         }
 
-        const findRentalByUser = await this.rentalsRepository.findOpenRentalByUser(
-            user_id
-        );
+        const findRentalByUser =
+            await this.rentalsRepository.findOpenRentalByUser(user_id);
 
         // verifica se existe um aluguel criado com o id desse usuário recebido
         if (findRentalByUser) {
