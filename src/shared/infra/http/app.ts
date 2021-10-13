@@ -8,6 +8,7 @@ import swaggerUI from "swagger-ui-express";
 import "../../container";
 
 import upload from "@config/upload";
+import rateLimiter from "@shared/infra/http/middlewares/rateLimiter";
 
 import swaggerFile from "../../../swagger.json";
 import { AppError } from "../../errors/AppError";
@@ -16,15 +17,16 @@ import { router } from "./routes";
 
 createConnection();
 const app = express();
+app.use(rateLimiter);
 
 app.use(express.json());
-
-app.use(cors());
 
 app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerFile));
 
 app.use("/avatar", express.static(`${upload.tmpFolder}/avatar`));
 app.use("/cars", express.static(`${upload.tmpFolder}/carImages`));
+
+app.use(cors());
 
 app.use(router);
 
