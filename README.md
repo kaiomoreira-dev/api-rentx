@@ -1,7 +1,7 @@
 
 <h1 align="center"> API Rentx </h1>
 
-##Decription
+## Decription
 * Um sistema para alugueis de carros utilizando um sistema de autenticação para validar qual o tipo de usuário pode utilizar o sistema. O sistema foi desenvolvido tem como finalidade regisrar os carros alugados, calcular o valor total entre os dias alugados junto com as multas na devolução do veiculo.
 
 ## Project access
