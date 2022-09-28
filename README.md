@@ -9,7 +9,7 @@
 ### Open && Run
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/kaiomoreira-dev/culinary-recipe.git>
+$ git clone <https://github.com/kaiomoreira-dev/api-rentx.git>
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd rentx
@@ -33,3 +33,5 @@ $ yarn test ou npm run test
 
 # O banco de dados do postgres fica no docker na porta 5432:5432
 ```
+## Status 
+* Essa é um aplicação academia em contrução.
