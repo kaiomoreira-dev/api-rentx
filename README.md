@@ -35,3 +35,6 @@ $ yarn test ou npm run test
 ```
 ## Status 
 * Essa é um aplicação academia em contrução.
+
+# Owner
+[<img src="https://avatars.githubusercontent.com/u/56137536?s=400&u=a74073f1d0f605815a4f343436c791ab7b7dc184&v=4" width=115><br><sub>Kaio Moreira</sub>](https://github.com/kaiomoreira-dev)
