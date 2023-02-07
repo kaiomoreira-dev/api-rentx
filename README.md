@@ -1,6 +1,6 @@
 <h1 align="center"> API Rentx </h1>
 
-![img-rentx](./API%20Rentx.png)
+![img-rentx](./img-rentx.png)
 
 ## Summary
 - [Intro](#intro)
