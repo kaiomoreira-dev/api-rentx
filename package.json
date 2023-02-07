@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/shared/infra/http/server.ts",
-    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli",
+    "dev": "ts-node-dev -r tsconfig-paths/register --transpile-only --ignore-watch node_modules --respawn src/shared/infra/http/server.ts",
+    "migrations": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli migration:run -d dist/shared/infra/typeorm/index.js",
     "test": "NODE_ENV=test jest --runInBand --detectOpenHandles ",
     "seed": "ts-node-dev shared/infra/typeorm/seed/admin.ts",
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files"
@@ -72,8 +72,8 @@
     "reflect-metadata": "^0.1.13",
     "supertest": "^6.1.4",
     "swagger-ui-express": "^4.1.6",
-    "tsyringe": "^4.5.0",
-    "typeorm": "^0.2.32",
+    "tsyringe": "^4.7.0",
+    "typeorm": "^0.3.11",
     "uuid": "^8.3.2"
   }
 }

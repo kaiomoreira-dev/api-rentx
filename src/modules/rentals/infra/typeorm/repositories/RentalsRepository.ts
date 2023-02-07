@@ -1,7 +1,8 @@
-import { getRepository, Repository } from "typeorm";
+import { Repository } from "typeorm";
 
 import { ICreateRentalsDTO } from "@modules/rentals/dto/ICreateRentalsDTO";
 import { IRentalsRepository } from "@modules/rentals/repositories/IRentalsRepository";
+import dataSource from "@shared/infra/typeorm";
 
 import { Rentals } from "../entities/Rentals";
 
@@ -9,7 +10,7 @@ class RentalsRepository implements IRentalsRepository {
     private repository: Repository<Rentals>;
 
     constructor() {
-        this.repository = getRepository(Rentals);
+        this.repository = dataSource.getRepository(Rentals);
     }
 
     async findByUser(user_id: string): Promise<Rentals[]> {
@@ -22,7 +23,7 @@ class RentalsRepository implements IRentalsRepository {
     }
 
     async findById(id: string): Promise<Rentals> {
-        const rental = this.repository.findOne(id);
+        const rental = this.repository.findOneBy({ id });
 
         return rental;
     }

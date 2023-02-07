@@ -3,21 +3,26 @@ version: "3.9"
 services:
     database:
         image: postgres
-        container_name: database_ignite
+        container_name: database_rentx
         restart: always
         ports: 
             - 5432:5432
         environment: 
             - POSTGRES_USER=docker
-            - POSTGRES_PASSWORD=ignite
+            - POSTGRES_PASSWORD=d2d71c6cde20a9efa785adfb81965d2eb2e860b2
             - POSTGRES_DB=rentx
         volumes: 
             - pgdata:/data/postgres
 
+            - ./src/shared/infra/typeorm/sql/create_base_test.sql:/docker-entrypoint-initdb.d/create_tables.sql
+
     redis:
         image: redis:alpine
+        container_name: redis
         ports: 
             - 6379:6379
+        volumes:
+            - redis:/data
 
     # app:
     #     build: .
@@ -34,4 +39,6 @@ services:
     
 volumes: 
     pgdata:
+        driver: local
+    redis:
         driver: local

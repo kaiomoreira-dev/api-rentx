@@ -2,6 +2,7 @@ import { inject, injectable } from "tsyringe";
 
 import { IUsersRepository } from "@modules/accounts/repositories/IUsersRepository";
 import { IStorageProvider } from "@shared/container/providers/StorageProvider/IStorageProvider";
+import { deleteFile } from "@utils/deleteFile";
 
 interface IRequest {
   user_id: string;
@@ -24,9 +25,10 @@ class UpdateUserUseCase {
     // se for verdadeiro aplicamos a condição
     if (user.avatar) {
       console.log(user.avatar);
-      await this.localStorageProvider.delete(user.avatar, "avatar");
+      await deleteFile(`./tmp/avatar/${user.avatar}/`);
+      // await this.localStorageProvider.delete(user.avatar, "avatar");
     }
-    await this.localStorageProvider.save(avatar_fileName, "avatar");
+    // await this.localStorageProvider.save(avatar_fileName, "avatar");
 
     // adicionar a avatar_fileName em user.avatar
     user.avatar = avatar_fileName;

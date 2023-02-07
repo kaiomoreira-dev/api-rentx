@@ -1,12 +1,12 @@
 import { hash } from "bcrypt";
 import request from "supertest";
-import { Connection } from "typeorm";
+import { DataSource } from "typeorm";
 import { v4 as uuidv4 } from "uuid";
 
-import { app } from "../../../../../shared/infra/http/app";
-import createConnection from "../../../../../shared/infra/typeorm/index";
+import { app } from "@shared/infra/http/app";
+import { createConnection } from "@shared/infra/typeorm";
 
-let connection: Connection;
+let connection: DataSource;
 
 describe("Create a Categories controller", () => {
   beforeAll(async () => {
