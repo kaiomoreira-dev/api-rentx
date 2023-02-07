@@ -6,7 +6,7 @@
 - [Pré-requisitos](#pré-requisitos)
 - [Diagrama](#diagram)
 - [Acesso ao projeto](#project-access)
-- [Open && Run](#open-and-run)
+- [Open && Run](#open--run)
 - [Techniques && Technologies](#techniques--technologies)
 - [Owner](#owner)
 
