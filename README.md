@@ -2,7 +2,7 @@
 <h1 align="center"> API Rentx </h1>
 
 ## Intro
-* Essa é uma aplicação academia desenvolvida através das atividades apreendidas com a Rockeseat. Sua finalidade é agregar conceitos basicos na formação profisional como desenvolvedor.
+* Essa é uma aplicação academia desenvolvida através das atividades apreendidas com a Rockeseat. Sua finalidade é agregar conceitos e tecnologias como princípios SOLID SRP, LSK e DIP, upload de arquivos, authenticação jwt, injeção de dependencia, express, postgreSQL, docker, Amazon service EC2, route53, S3, cloud, boas prática, criar dominío, configura dominío, documentação, teste integração, unidade e  modelagem dados com typeORM.
 
 ## Decription
 * API Rentx é uma API REST monolítica com o objetivo de criar aluguel de carro de uma empresa fictícia. Aplicação deve conter um usário authenticado através de um token com validade para pode criar um aluguel. Cada aluguel poderá alugar apenas um carro por vez para cada usuário. Sendo que cada carro contém especificação, categoria e imagens. Cada aluguel criado terá um prazo. E em casos de atrazo será aplicado uma multa.
