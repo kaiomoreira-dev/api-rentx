@@ -7,6 +7,7 @@
 - [Diagrama](#diagram)
 - [Acesso ao projeto](#project-access)
 - [Open && Run](#open--run)
+- [Status](#status)
 - [Techniques && Technologies](#techniques--technologies)
 - [Owner](#owner)
 
@@ -67,7 +68,7 @@ $ yarn test ou npm run test
 # O banco de dados do postgres fica no docker na porta 5432:5432
 ```
 ## Status 
-* Essa é um aplicação academia em contrução.
+* Essa é uma aplicação academia em contrução partindo de atividades. Tem como objetivo concretizar ensinamentos e denvolvimento evolução profissional.
 
 
 ## Techniques && Technologies
