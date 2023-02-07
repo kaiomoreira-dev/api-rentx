@@ -43,6 +43,9 @@ class Rentals {
     @Column()
     total: number;
 
+    @Column()
+    status: boolean;
+
     @CreateDateColumn()
     created_at: Date;
 

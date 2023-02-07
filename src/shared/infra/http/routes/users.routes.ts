@@ -1,7 +1,7 @@
 import { Router } from "express";
 import multer from "multer";
 
-import uploadConfig from "@config/upload";
+import { tmpDirectoriesUploadConfig } from "@config/upload";
 import { CreateUserController } from "@modules/accounts/useCases/createUser/CreateUserController";
 import { ProfileUserController } from "@modules/accounts/useCases/profileUser/ProfileUserController";
 import { UpdateUserController } from "@modules/accounts/useCases/updateUser/UpdateUserController";
@@ -10,7 +10,9 @@ import { ensureAuthenticate } from "../middlewares/ensureAuthenticate";
 
 const usersRoutes = Router();
 
-const uploadAvatar = multer(uploadConfig);
+const { avatar } = tmpDirectoriesUploadConfig;
+
+const uploadAvatars = multer(avatar);
 
 const updateUserUseController = new UpdateUserController();
 
@@ -23,7 +25,7 @@ usersRoutes.post("/", createUserController.hundle);
 usersRoutes.patch(
     "/avatar",
     ensureAuthenticate,
-    uploadAvatar.single("avatar"),
+    uploadAvatars.single("photo"),
     updateUserUseController.hundle
 );
 

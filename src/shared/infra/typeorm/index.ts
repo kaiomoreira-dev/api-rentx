@@ -17,8 +17,9 @@ import { AlterUserAddAvatar1622644295560 } from "./migrations/1622644295560-Alte
 import { CreateCars1625251349603 } from "./migrations/1625251349603-CreateCars";
 import { CreateSpecificationsCars1626808711144 } from "./migrations/1626808711144-CreateSpecificationsCars";
 import { CreateCarImages1627314088276 } from "./migrations/1627314088276-CreateCarImages";
-import { CreateRentals1627412397902 } from "./migrations/1627412397902-CreateRentals";
 import { CreateUsersTokens1629494906724 } from "./migrations/1629495535368-CreateUsersTokens";
+import { CreateRentals1675777233336 } from "./migrations/1675777233336-CreateRentals";
+import { AlterRentalsAddStatus1675777382255 } from "./migrations/1675777382255-AlterRentalsAddStatus";
 
 const dataSource = new DataSource({
     type: "postgres",
@@ -34,8 +35,8 @@ const dataSource = new DataSource({
         User,
         Car,
         CarImages,
-        Rentals,
         UsersTokens,
+        Rentals,
     ],
     // importar migrations ex: [CreateRecipes102348998]
     migrations: [
@@ -47,8 +48,9 @@ const dataSource = new DataSource({
         CreateCars1625251349603,
         CreateSpecificationsCars1626808711144,
         CreateCarImages1627314088276,
-        CreateRentals1627412397902,
+        CreateRentals1675777233336,
         CreateUsersTokens1629494906724,
+        AlterRentalsAddStatus1675777382255,
     ],
 });
 

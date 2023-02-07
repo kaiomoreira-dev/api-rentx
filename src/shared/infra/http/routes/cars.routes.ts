@@ -1,7 +1,7 @@
 import { Router } from "express";
 import multer from "multer";
 
-import uploadConfig from "@config/upload";
+import { tmpDirectoriesUploadConfig } from "@config/upload";
 import { CreateCarImagesController } from "@modules/cars/useCases/createCarImages/CreateCarImagesController";
 import { CreateCarsController } from "@modules/cars/useCases/createCars/CreateCarsController";
 import { CreateCarSpecificationControlle } from "@modules/cars/useCases/createCarSpecifications/CreateCarSpecificationControlle";
@@ -12,6 +12,10 @@ import { ensureAuthenticate } from "../middlewares/ensureAuthenticate";
 
 const carsRoutes = Router();
 
+const { car } = tmpDirectoriesUploadConfig;
+
+const uploadCars = multer(car);
+
 const createCarsController = new CreateCarsController();
 
 const listAvailableCarsController = new ListAvailableCarsController();
@@ -19,8 +23,6 @@ const listAvailableCarsController = new ListAvailableCarsController();
 const createCarSpecificationController = new CreateCarSpecificationControlle();
 
 const createCarImagesController = new CreateCarImagesController();
-
-const upload = multer(uploadConfig);
 
 carsRoutes.post(
     "/",
@@ -42,7 +44,7 @@ carsRoutes.post(
     "/images/:id",
     ensureAuthenticate,
     ensureAdmin,
-    upload.array("images"),
+    uploadCars.array("photos"),
     createCarImagesController.hundle
 );
 

@@ -1,18 +1,43 @@
-import crypto from "crypto";
 import multer from "multer";
-import { resolve } from "path";
+import { randomUUID } from "node:crypto";
+import { readdirSync } from "node:fs";
+import { resolve } from "node:path";
 
+// Cria função para receber mais de um diretorio
+const getDirectories = (source: string): string[] =>
+  readdirSync(source, { withFileTypes: true })
+    .filter((dirent) => dirent.isDirectory())
+    .map((dirent) => dirent.name);
+
+// Variável tmpFolder recebe o caminho da pasta tmp
 const tmpFolder = resolve(__dirname, "..", "..", "tmp");
 
-export default {
-  tmpFolder,
-  storage: multer.diskStorage({
-    destination: tmpFolder,
-    filename: (request, file, callback) => {
-      const fileHash = crypto.randomBytes(16).toString("hex");
-      const fileName = `${fileHash}-${file.originalname}`;
+// Cria array de string vazia com
+const tempDirectories: string[] = getDirectories(tmpFolder);
 
-      return callback(null, fileName);
-    },
-  }),
-};
+// Filtra o diretorio recebido retornando em um Objeto.assign
+const tmpDirectoriesUploadConfig = tempDirectories
+  .map((directory) => {
+    const tmpFolder = resolve(__dirname, "..", "..", "tmp", directory);
+    return {
+      [directory]: {
+        directory: tmpFolder,
+        storage: multer.diskStorage({
+          destination: tmpFolder,
+          filename(request, file, callback) {
+            const fileHash = randomUUID();
+            const fileName = `${fileHash}-${file.originalname}`;
+
+            return callback(null, fileName);
+          },
+        }),
+      },
+    };
+  })
+  .reduce((object, item) => {
+    const [key] = Object.keys(item);
+    return Object.assign(object, { [key]: item[key] });
+  }, {});
+
+// Exporta variável que retorna caminho recebido
+export { tmpDirectoriesUploadConfig };

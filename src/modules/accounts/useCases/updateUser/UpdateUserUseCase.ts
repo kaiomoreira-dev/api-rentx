@@ -21,11 +21,9 @@ class UpdateUserUseCase {
     // buscar user pelo id
     const user = await this.userRepository.findById(user_id);
 
-    // console.log(user);
     // se for verdadeiro aplicamos a condição
     if (user.avatar) {
-      console.log(user.avatar);
-      await deleteFile(`./tmp/avatar/${user.avatar}/`);
+      await deleteFile(`./tmp/avatar/${user.avatar}`);
       // await this.localStorageProvider.delete(user.avatar, "avatar");
     }
     // await this.localStorageProvider.save(avatar_fileName, "avatar");

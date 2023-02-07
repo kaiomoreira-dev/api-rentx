@@ -10,7 +10,7 @@ import express, { NextFunction, Request, Response } from "express";
 import "express-async-errors";
 import swaggerUI from "swagger-ui-express";
 
-import upload from "@config/upload";
+import { tmpDirectoriesUploadConfig } from "@config/upload";
 import * as Sentry from "@sentry/node";
 import * as Tracing from "@sentry/tracing";
 import rateLimiter from "@shared/infra/http/middlewares/rateLimiter";
@@ -42,8 +42,12 @@ app.use(express.json());
 
 app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerFile));
 
-app.use("/avatar", express.static(`${upload.tmpFolder}/avatar`));
-app.use("/cars", express.static(`${upload.tmpFolder}/carImages`));
+// app.use("/files/car", express.static(tmpDirectoriesUploadConfig.car.directory));
+
+app.use(
+    "/files/avatar",
+    express.static(tmpDirectoriesUploadConfig.avatar.directory)
+);
 
 app.use(cors());
 

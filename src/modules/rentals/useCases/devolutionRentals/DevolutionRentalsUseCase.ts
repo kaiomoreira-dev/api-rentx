@@ -56,6 +56,10 @@ class DevolutionRentalsUseCase {
         rental.end_date = this.dateProvider.dateNow();
         rental.total = total;
 
+        // alterar status da rentals para true
+
+        await this.rentalsRepository.updateStatusTrue(rental.id, true);
+
         await this.rentalsRepository.create(rental);
 
         await this.carsRepository.updateAvailable(car.id, true);

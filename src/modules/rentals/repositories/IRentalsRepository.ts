@@ -7,6 +7,8 @@ interface IRentalsRepository {
   create(data: ICreateRentalsDTO): Promise<Rentals>;
   findById(id: string): Promise<Rentals>;
   findByUser(user_id: string): Promise<Rentals[]>;
+
+  updateStatusTrue(id: string, status: boolean): Promise<void>;
 }
 
 export { IRentalsRepository };

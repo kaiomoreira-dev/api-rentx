@@ -29,17 +29,11 @@ class CreateRentalsUseCase {
             await this.rentalsRepository.findOpenRentalByCar(car_id);
 
         // verifica se existe um aluguel criado com o id desse carro recebido
-        if (findRentalByCar) {
+        if (findRentalByCar && !findRentalByCar.status) {
             throw new AppError("Car already exists for a rentals");
         }
 
-        const findRentalByUser =
-            await this.rentalsRepository.findOpenRentalByUser(user_id);
-
-        // verifica se existe um aluguel criado com o id desse usuário recebido
-        if (findRentalByUser) {
-            throw new AppError("User already exists for a rentals");
-        }
+        // *verificar se um cliente tem mais de um aluguel
 
         // um aluguel deve ter no minimo 24horas
         const dateNow = this.dateProvider.dateNow();

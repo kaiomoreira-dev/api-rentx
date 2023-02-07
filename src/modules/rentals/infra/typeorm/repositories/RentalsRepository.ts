@@ -12,6 +12,14 @@ class RentalsRepository implements IRentalsRepository {
     constructor() {
         this.repository = dataSource.getRepository(Rentals);
     }
+    async updateStatusTrue(id: string, status: boolean): Promise<void> {
+        await this.repository
+            .createQueryBuilder()
+            .update()
+            .where({ id })
+            .set({ status })
+            .execute();
+    }
 
     async findByUser(user_id: string): Promise<Rentals[]> {
         const rentals = await this.repository.find({
