@@ -7,6 +7,9 @@
 ## Decription
 * API Rentx é uma API REST monolítica com o objetivo de criar aluguel de carro de uma empresa fictícia. Aplicação deve conter um usário authenticado através de um token com validade para pode criar um aluguel. Cada aluguel poderá alugar apenas um carro por vez para cada usuário. Sendo que cada carro contém especificação, categoria e imagens. Cada aluguel criado terá um prazo. E em casos de atrazo será aplicado uma multa.
 
+## Diagram
+![diagram-rentx](readme-img/diagram-culinary-recipe.png)
+
 ## Project access
 
 ### Open && Run
