@@ -1,6 +1,7 @@
 <h1 align="center"> API Rentx </h1>
 
 ## Summary
+- [Intro](#intro)
 - [Description](#description)
 - [Pré-requisitos](#pré-requisitos)
 - [Diagrama](#diagram)
@@ -12,8 +13,20 @@
 ## Intro
 * Essa é uma aplicação academia desenvolvida através das atividades apreendidas com a Rockeseat. Sua finalidade é agregar conceitos e tecnologias como princípios SOLID SRP, LSK e DIP, upload de arquivos, authenticação jwt, injeção de dependencia, express, postgreSQL, docker, Amazon service EC2, route53, S3, cloud, boas prática, criar dominío, configura dominío, documentação, teste integração, unidade, modelagem dados com typeORM, monitoramento, CI/CD e gerenciador de processos.
 
-## Decription
+## Description
 * API Rentx é uma API REST monolítica com o objetivo de criar aluguel de carro de uma empresa fictícia. Aplicação deve conter um usário authenticado através de um token com validade para pode criar um aluguel. Cada aluguel poderá alugar apenas um carro por vez para cada usuário. Sendo que cada carro contém especificação, categoria e imagens. Cada aluguel criado terá um prazo. E em casos de atrazo será aplicado uma multa.
+
+## Pré-requisitos
+* Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Node.js](https://nodejs.org/en/). 
+E o banco de dados Postgres:
+[Postgres](https://www.postgresql.org/).
+E o docker para utilizar docker-compose para subir o container do Postgres
+[Docker](https://https://www.docker.com/).
+E instalar o docker-compose pra subir o container.
+[Docker-Compose](https://docs.docker.com/compose/install/).
+Além disto é bom ter um editor para trabalhar com o código como 
+[VSCode](https://code.visualstudio.com/).
 
 ## Diagram
 ![diagram-rentx](./diagrama.png)
