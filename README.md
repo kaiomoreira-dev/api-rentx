@@ -1,7 +1,5 @@
-
 <h1 align="center"> API Rentx </h1>
 
-## Summary
 ## Summary
 - [Description](#description)
 - [Pré-requisitos](#pré-requisitos)
