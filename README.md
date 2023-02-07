@@ -1,6 +1,8 @@
 <h1 align="center"> API Rentx </h1>
 
-![img-rentx](./img-rentx.png)
+<p align="center">
+  <img width="200" height="200" src="https://github.com/kaiomoreira-dev/api-rentx/blob/main/img-rentx.png">
+</p>
 
 ## Summary
 - [Intro](#intro)
