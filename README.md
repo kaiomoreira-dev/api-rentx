@@ -5,7 +5,7 @@
 * Essa é uma aplicação academia desenvolvida através das atividades apreendidas com a Rockeseat. Sua finalidade é agregar conceitos basicos na formação profisional como desenvolvedor.
 
 ## Decription
-* Um sistema para alugueis de carros utilizando um sistema de autenticação para validar qual o tipo de usuário pode utilizar o sistema. O sistema foi desenvolvido com a finalidade de regisrar os carros alugados. calcular o valor total entre os dias alugados junto com as multas na devolução do veiculo.
+* API Rentx é uma API REST monolítica com o objetivo de criar aluguel de carro de uma empresa fictícia. Aplicação deve conter um usário authenticado através de um token com validade para pode criar um aluguel. Cada aluguel poderá alugar apenas um carro por vez para cada usuário. Sendo que cada carro contém especificação, categoria e imagens. Cada aluguel criado terá um prazo. E em casos de atrazo será aplicado uma multa.
 
 ## Project access
 
