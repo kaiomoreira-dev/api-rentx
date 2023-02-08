@@ -16,7 +16,7 @@
 - [Owner](#owner)
 
 ## Intro
-* Essa é uma aplicação academia desenvolvida através das atividades apreendidas com a Rockeseat. Sua finalidade é agregar conceitos e tecnologias como princípios SOLID SRP, LSK e DIP, upload de arquivos, authenticação jwt, injeção de dependencia, express, postgreSQL, docker, Amazon service EC2, route53, S3, cloud, boas prática, criar dominío, configura dominío, documentação, teste integração, unidade, modelagem dados com typeORM, monitoramento, CI/CD e gerenciador de processos.
+* Essa é uma aplicação acadêmia desenvolvida através das atividades apreendidas com a Rockeseat. Sua finalidade é agregar conceitos e tecnologias como princípios SOLID SRP, LSK e DIP, upload de arquivos, authenticação jwt, injeção de dependencia, express, postgreSQL, docker, Amazon service EC2, route53, S3, cloud, boas prática, criar dominío, configura dominío, documentação, teste integração, unidade, modelagem dados com typeORM, monitoramento, CI/CD e gerenciador de processos.
 
 ## Description
 * API Rentx é uma API REST monolítica com o objetivo de criar aluguel de carro de uma empresa fictícia. Aplicação deve conter um usário authenticado através de um token com validade para pode criar um aluguel. Cada aluguel poderá alugar apenas um carro por vez para cada usuário. Sendo que cada carro contém especificação, categoria e imagens. Cada aluguel criado terá um prazo. E em casos de atrazo será aplicado uma multa.
@@ -72,7 +72,7 @@ $ yarn test ou npm run test
 # O banco de dados do postgres fica no docker na porta 5432:5432
 ```
 ## Status 
-* Essa é uma aplicação academia em contrução partindo de atividades. Tem como objetivo concretizar ensinamentos e denvolvimento evolução profissional.
+* Aplicação finalizada devido ao término das atividades acadêmicas. Tendo como objetivo concretizar ensinamentos e o denvolvimento profissional.
 
 
 ## Techniques && Technologies
@@ -97,3 +97,5 @@ $ yarn test ou npm run test
 
 # Owner
 [<img src="https://avatars.githubusercontent.com/u/56137536?s=400&u=a74073f1d0f605815a4f343436c791ab7b7dc184&v=4" width=115><br><sub>Kaio Moreira</sub>](https://github.com/kaiomoreira-dev)
+
+[<img src="https://avatars.githubusercontent.com/u/69590972?s=200&v=4" width=115><br><sub>Rocketseat</sub>](https://github.com/rocketseat-education)
