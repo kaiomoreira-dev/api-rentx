@@ -30,10 +30,10 @@ hierarquia, monitoramento e tratamento de erros, modelagem de use cases, conceit
 práticas na linguagem de programação, manipulação de arquivos, diretórios e nome de
 arquivos, automatização de atualizações, formatar datas, criptografar informações, banco de
 dados relacional, desacoplamento de módulos, restringir dados e desenvolvimento de
-estrutura escalável por camadas. Com isso adquiri experiência para criar aplicações desde o
-ambiente de desenvolvimento até em produção. Habilidades de comportamento significativa
-para o desenvolvimento profissional como programador. E tendo resultados de 9 a 10 nos
-desafios acadêmicos.
+estrutura escalável por camadas. Com isso, adquiri experiência para criar aplicações desde
+o ambiente de desenvolvimento até em produção. Habilidades de comportamento
+significativa para o desenvolvimento profissional como programador e tendo resultados de 9
+a 10 nos desafios acadêmicos.
 
 ## Pré-requisitos
 * Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
