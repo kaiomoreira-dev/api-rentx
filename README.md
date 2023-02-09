@@ -16,10 +16,24 @@
 - [Owner](#owner)
 
 ## Intro
-* Essa é uma aplicação acadêmia desenvolvida através das atividades apreendidas com a Rockeseat no programa Ignite. Sua finalidade é agregar conceitos e tecnologias como princípios SOLID SRP, LSK e DIP, upload de arquivos, authenticação jwt, injeção de dependencia, express, postgreSQL, docker, Amazon service EC2, route53, S3, cloud, boas prática, criar dominío, configura dominío, documentação, teste integração, unidade, modelagem dados com typeORM, monitoramento, CI/CD e gerenciador de processos.
+* Rentx é uma API REST monolítica desenvolvida para criar locação de carros. Desenvolvido
+como projeto acadêmico junto a Rockeseat dentro do programa Ignite.
 
 ## Description
-* API Rentx é uma API REST monolítica com o objetivo de criar aluguel de carro de uma empresa fictícia. Aplicação deve conter um usário authenticado através de um token com validade para pode criar um aluguel. Cada aluguel poderá alugar apenas um carro por vez para cada usuário. Sendo que cada carro contém especificação, categoria e imagens. Cada aluguel criado terá um prazo. E em casos de atrazo será aplicado uma multa.
+* Diante da API Rentx foram desenvolvidas atividades como criar instância EC2, criar e
+configurar serviço DNS route53, criar armazenamento S3, configurar serviço de e-mail SES
+utilizando Amazon Web Service. Sistema de autenticação de usuário usando jwt contendo
+refresh token. Modelagem de dados, relacionamento, migrations para versionamento de
+base de dado utilizando typeORM. Criar testes de integração e unidade utilizando jest.
+Docker para criar containers contendo base de dados e aplicação. Docker-compose para
+criar serviços orquestrador. Babel para traspilar o código. Funções middlewares para
+segurança. Princípios SOLID SRP, LSK e DIP. Sentry para monitoramento de erros.
+Modelagem de useCases com conceitos UML. Conceitos, boas práticas com JavaScript e
+Typescript. Servidores criados com Express. Scripts CLI automatizados. Manipulação de
+arquivos, diretórios e nome de arquivos. Tratamento de async-erros. Arquiteturas como
+REST e monolítica. Git Actions para automatização CI/CD. Injeção de dependência.
+PostgreSQL para modelagens relacionais. Singleton como design patterns. Desenvolvimento
+de estrutura escalável por camadas.
 
 ## Pré-requisitos
 * Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
