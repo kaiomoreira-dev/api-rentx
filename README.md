@@ -25,7 +25,7 @@ configurar protocolo de rede, armazenamento de arquivos, configurar serviço env
 mail, sistema de autenticação de usuário com refresh-token, modelagem de dados e
 relacionamento, versionamento de base de dado, testes de regra de negócios e fluxo I/O,
 serviços para orquestrar containers, converter código em JavaScript, funções de segurança,
-documentação, acrónimos para responsabilidade única, substituição de serviço e uso de
+documentação, acrônimos para responsabilidade única, substituição de serviço e uso de
 hierarquia, monitoramento e tratamento de erros, modelagem de use cases, conceitos, boas
 práticas na linguagem de programação, manipulação de arquivos, diretórios e nome de
 arquivos, automatização de atualizações, formatar datas, criptografar informações, banco de
