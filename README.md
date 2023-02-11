@@ -20,20 +20,9 @@
 como projeto acadêmico junto a Rockeseat dentro do programa Ignite.
 
 ## Description
-* Diante da API Rentx foram desenvolvidas atividades para colocar API em produção,
-configurar protocolo de rede, armazenamento de arquivos, configurar serviço envio de e-
-mail, sistema de autenticação de usuário com refresh-token, modelagem de dados e
-relacionamento, versionamento de base de dado, testes de regra de negócios e fluxo I/O,
-serviços para orquestrar containers, converter código em JavaScript, funções de segurança,
-documentação, acrônimos para responsabilidade única, substituição de serviço e uso de
-hierarquia, monitoramento e tratamento de erros, modelagem de use cases, conceitos, boas
-práticas na linguagem de programação, manipulação de arquivos, diretórios e nome de
-arquivos, automatização de atualizações, formatar datas, criptografar informações, banco de
-dados relacional, desacoplamento de módulos, restringir dados e desenvolvimento de
-estrutura escalável por camadas. Com isso, adquiri experiência para criar aplicações desde
-o ambiente de desenvolvimento até em produção. Habilidades de comportamento
-significativa para o desenvolvimento profissional como programador e tendo resultados de 9
-a 10 nos desafios acadêmicos.
+* Diante da API Rentx desenvolveu e utilizou aplicação com uma estrutura monolítica colocando em
+produção, configurou protocolo de rede, criou armazenamento de arquivos, serviço envio de e-mail. Desenvolveu sistema de autenticação de usuário com refresh-token, modelou de dados e  relacionamento, criou versionamento da base de dado, testou regra de negócios e fluxo I/O, criou serviços para orquestrar containers, configurou conversor de código em JavaScript, criou funções de segurança, documentou rotas, utilizou acrônimos para responsabilidade única, substituição de serviço e uso de hierarquia, monitorou e tratou de erros, modelou use cases, utilizou conceitos e boas práticas na linguagem de programação, manipulou arquivos, diretórios e nome de arquivos, automatizou atualizações, formatou datas, criptografou informações, utilizou banco de dados relacional, desacoplou módulos, restringiu dados sensíveis e desenvolveu estrutura escalável por camadas. Com isso, adquiriu experiência para criar aplicações desde o ambiente de desenvolvimento até em produção. Criou habilidades de comportamento significativa para o desenvolvimento 
+profissional como programador com resultados de 9 a 10 nos desafios acadêmicos.
 
 ## Pré-requisitos
 * Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
